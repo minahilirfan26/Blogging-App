@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="spiner-container" id="spiner">
+        <div class="loading d-flex">
+            <h1>Loading....</h1>
+            <div class="loader"></div>
+        </div>
+     </div>
+    
+        <section class="wrapper">
+          <div class="form signup">
+            <header>Signup</header>
+            <form action="#">
+              <input type="text" placeholder="Full name" required id="fullName"/>
+              <input type="number" placeholder="Phone" required id="phone" />
+              <input type="text" placeholder="Email address" required id="email" />
+              <input type="password" placeholder="Password" required id="password"/>
+              <div class="checkbox">
+                <input type="checkbox" id="signupCheck" />
+                <label for="signupCheck">I accept all terms & conditions</label>
+              </div>
+              <input type="submit" value="Signup" id="signupBtn" />
+            </form>
+          </div>
+    
+          <div class="form login">
+            <header>SignIn</header>
+            <form action="#">
+              <input type="text" placeholder="Email address" required id="signInEmail" />
+              <input type="password" placeholder="Password" required id="signInpassword"/>
+              <a href="#">Forgot password?</a>
+              <input type="submit" value="signin" id="signInBtn" />
+            </form>
+          </div>
+        </section>
+
+        <script src="javascript/bootstarp.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="module" src="javascript/app.js"></script>
+</body>
+</html>
